@@ -1,0 +1,8 @@
+.Pic {
+    background-image: url('./Pics/fyiBack.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    margin-top: -80px;
+    display: flex;
+}
