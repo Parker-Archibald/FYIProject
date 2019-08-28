@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../Styles/AboutMeBio.css";
 
 class AboutMeBio extends Component {
+
   render() {
     return (
       <div>

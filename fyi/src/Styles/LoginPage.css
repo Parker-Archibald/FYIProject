@@ -1,0 +1,10 @@
+#back {
+    background-color: tomato;
+    margin-top: 50px;
+    height: 1400px;
+}
+
+#inBox {
+    margin-top: -1350px;
+    margin-left: 600px;
+}

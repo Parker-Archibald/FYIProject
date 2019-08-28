@@ -1,0 +1,47 @@
+#sigServe {
+    font-size: 40px;
+    font-weight: 100;
+    margin-top: 200px;
+    margin-left: 330px;
+    margin-bottom: 100px;
+}
+
+#box1 {
+    height: 400px;
+    width: 350px;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: -130px;
+    margin-bottom: 100px;
+    background-color: lightgray;
+}
+
+#box2 {
+    height: 400px;
+    width: 350px;
+    font-size: 20px;
+    margin-left: 270px;
+    margin-top: -500px;
+    background-color: lightgray;
+}
+
+#box3 {
+    height: 400px;
+    width: 350px;
+    font-size: 20px;
+    margin-left: 670px;
+    margin-top: -400px;
+    background-color: lightgray;
+}
+
+#box1:hover {
+    box-shadow: 6px 8px 10px 4px gray;
+}
+
+#box2:hover {
+    box-shadow: 6px 8px 10px 4px gray;
+}
+
+#box3:hover {
+    box-shadow: 6px 8px 10px 4px gray;
+}

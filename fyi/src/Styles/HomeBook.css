@@ -1,0 +1,28 @@
+#qBook {
+    border: 3px solid gray;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 200px;
+    height: 200px;
+    width: 1150px;
+}
+
+#qForBook {
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+#bookBtn {
+    border: none;
+    border-radius: 100px;
+    height: 80px;
+    width: 200px;
+    font-size: 20px;
+}
+
+#btn {
+    margin-left: 850px;
+    margin-top: -80px;
+}
