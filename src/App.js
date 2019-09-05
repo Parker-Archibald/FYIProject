@@ -8,6 +8,7 @@ import Routes from './Config/Routes';
 function App() {
   return (
     <div>
+      <title>Fashion Your Image</title>
       <Router>
         <Nav/>
         <Routes/>

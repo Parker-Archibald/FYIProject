@@ -8,12 +8,9 @@
 }
 
 #picQuote1 {
-    font-size: 50px;
     color: white;
-    margin-top: 150px;
     font-weight: 100%;
     text-shadow: 2px 4px 5px black;
-    animation: textLoad 1.5s forwards;
 }
 
 #picQuote2 {
@@ -27,6 +24,7 @@
     animation-delay: 1s;
 }
 
+
 #picQuote3 {
     font-size: 50px;
     color: white;
@@ -38,7 +36,7 @@
     animation-delay: 2s;
 }
 
-#hBoxQ {
+ #hBoxQ {
     margin-top: -300px;
     margin-left: 670px;
     border: 1px solid red;
@@ -48,12 +46,113 @@
     box-shadow: 12px 12px 1px tomato;
 }
 
+
+@media only screen and (max-width: 1600px) {
+
+    #picQuote1 {
+    font-size: 50px;
+    margin-top: 150px;
+    animation: textLoad 1.5s forwards;
+    }
+    @keyframes textLoad {
+        0% {
+            margin-left: -200px;
+            opacity: .1;
+        }
+        100% {
+            margin-left: 300px;
+            opacity: 1;
+        }
+    }
+    
+    @keyframes textLoad2 {
+        0% {
+            opacity: .1;
+        }
+        100% {
+            margin-left: -338px;
+            opacity: 1;
+        }
+    }
+    
+    @keyframes textLoad3 {
+        0% {
+            opacity: .1;
+        }
+        100% {
+            margin-left: -320px;
+            opacity: 1;
+        }
+    }
+}
+
+
 #hQuestion {
     color: black;
     font-size: 40px;
     font-weight: 8;
     display: flex;
 }
+
+@media only screen and (max-width: 600px) {
+    .Pic {
+        background-size: relative;
+        width: 500px;
+        background-size: contain;
+    }
+    #picQuote1 {
+        font-size: 20px;
+        margin-top: 30px;
+        animation: textLoad 1.5s forwards;
+    }
+
+    #picQuote2 {
+        font-size: 20px;
+        margin-top: 60px;
+        animation: textLoad2 1.5s forwards;
+        animation-delay: 1s
+    }
+
+    #picQuote3 {
+        font-size: 20px;
+        margin-top: 90px;
+        animation: textLoad3 1.5s forwards;
+        animation-delay: 2s;
+    }
+
+    @keyframes textLoad {
+        0% {
+            margin-left: -80px;
+            opacity: .1;
+        }
+        100% {
+            margin-left: 100px;
+            opacity: 1;
+        }
+    }
+    @keyframes textLoad2 {
+        0% {
+            margin-left: -400px;
+            opacity: .1;
+        }
+        100% {
+            margin-left: -136px;
+            opacity: 1;
+        }
+    }
+
+    @keyframes textLoad3 {
+        0% {
+            margin-left: -400px;
+            opacity: .1;
+        }
+        100% {
+            margin-left: -128px;
+            opacity: 1;
+        }
+    }
+}
+
 
 #hBtn {
     margin-left: 1020px;
@@ -64,35 +163,4 @@
     height: 40px;
     width: 123px;
     font-size: 20px;
-}
-
-@keyframes textLoad {
-    0% {
-        margin-left: -200px;
-        opacity: .1;
-    }
-    100% {
-        margin-left: 300px;
-        opacity: 1;
-    }
-}
-
-@keyframes textLoad2 {
-    0% {
-        opacity: .1;
-    }
-    100% {
-        margin-left: -338px;
-        opacity: 1;
-    }
-}
-
-@keyframes textLoad3 {
-    0% {
-        opacity: .1;
-    }
-    100% {
-        margin-left: -320px;
-        opacity: 1;
-    }
 }
