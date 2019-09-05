@@ -4,28 +4,38 @@ const port = 3000;
 const cors = require("cors");
 
 const MongoClient = require("mongodb").MongoClient;
-const url =
-  "mongodb+srv://pdarchibald:mlarchibald@cluster0-vdsoz.mongodb.net/test?retryWrites=true&w=majority";
+const url = "mongodb+srv://pdarchibald:mlarchibald@cluster0-vdsoz.mongodb.net/test?retryWrites=true&w=majority";
 const dbName = "FYI";
+const ObjectId = require("mongodb").ObjectId;
 
 app.use(express.json());
 app.use(cors());
 
-let person = [{ name: "parker" }];
-
-app.get("/", (req, res) => {
+app.get("/leads", (req, res) => {
   MongoClient.connect(url, { useNewUrlParser: true }, function(err, client) {
-    const db = client.db(dbName);
-    const collection = db.collection("users");
     console.log("Connected successfully to server");
-    collection.find({}).toArray((err, docs) => {
+    const db = client.db(dbName);
+    const collection = db.collection('users');
+    collection.find({status: 'potentialClient'}).toArray((err, docs) => {
+      client.close();
       res.send(docs);
     });
   });
 });
 
-app.post("/", (req, res) => {
-  if(req.body.password === req.body.confirm) {
+app.get("/clients", (req, res) => {
+  MongoClient.connect(url, { useNewUrlParser: true }, function(err, client) {
+    const db = client.db(dbName);
+    const collection = db.collection('users');
+    collection.find({status: 'currentClient'}).toArray((err, docs) => {
+      client.close();
+      res.send(docs);
+    });
+  });
+});
+
+app.post("/leads", (req, res) => {
+
     MongoClient.connect(url, { useNewUrlParser: true }, (err, client) => {
         const db = client.db(dbName);
         const collection = db.collection("users");
@@ -33,20 +43,36 @@ app.post("/", (req, res) => {
           {
             name: req.body.name,
             email: req.body.email,
-            password: req.body.password
+            date: req.body.date,
+            phone: req.body.phone,
+            comments: req.body.comments,
+            status: req.body.status
           }
         ]);
         client.close();
         res.send("Added user");
       });
-  }
-  else {
-      res.send("Passwords do not match");
-  }
 });
 
-//app.put
+app.put('/leads/:ID', (req, res) => {
+  MongoClient.connect(url, { useNewUrlParser: true }, (err, client) => {
+    const db = client.db(dbName);
+    const collection = db.collection("users");
+    collection.updateOne({_id: ObjectId(req.params.ID)}, {$set: req.body});
+    client.close();
+    res.send("Updated");
+  });
+});
 
-//app.delete
+app.delete("/leads/:ID", (req, res) => {
+  MongoClient.connect(url, { useNewUrlParser: true }, async (err, client) => {
+    const db = client.db(dbName);
+    const collection = db.collection("users");
+    await collection.deleteOne({_id: ObjectId(req.params.ID)});
+    res.send("Deleted");
+
+    client.close();
+  });
+});
 
 app.listen(port, () => console.log(`Listening on port ${port}!`));

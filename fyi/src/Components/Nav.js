@@ -26,7 +26,7 @@ class Nav extends Component {
             </Link>
           </nav>
         </div>
-        <div id="login"><Link to='/login' style={{textDecoration:"none", color:'black'}}>Book</Link></div>
+        <div id="login"><Link to='/book' style={{textDecoration:"none", color:'black'}}>Book</Link></div>
       </div>
     );
   }

@@ -1,5 +1,5 @@
 .Pic {
-    background-image: url('./Pics/fyiBack.jpg');
+    background-image: url('./Pics/FYIBanner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
@@ -7,19 +7,42 @@
     display: flex;
 }
 
-#picQuote {
-    font-size: 30px;
+#picQuote1 {
+    font-size: 50px;
     color: white;
-    margin: 200px 0px 0px 120px;
+    margin-top: 150px;
     font-weight: 100%;
     text-shadow: 2px 4px 5px black;
+    animation: textLoad 1.5s forwards;
+}
+
+#picQuote2 {
+    font-size: 50px;
+    color: white;
+    margin-top: 220px;
+    margin-left: -1000px;
+    font-weight: 100%;
+    text-shadow: 2px 4px 5px black;
+    animation: textLoad2 1.5s forwards;
+    animation-delay: 1s;
+}
+
+#picQuote3 {
+    font-size: 50px;
+    color: white;
+    margin-top: 290px;
+    margin-left: -1000px;
+    font-weight: 100%;
+    text-shadow: 2px 4px 5px black;
+    animation: textLoad3 1.5s forwards;
+    animation-delay: 2s;
 }
 
 #hBoxQ {
     margin-top: -300px;
-    margin-left: 750px;
+    margin-left: 670px;
     border: 1px solid red;
-    width: 650px;
+    width: 750px;
     padding: 20px;
     display: flex;
     box-shadow: 12px 12px 1px tomato;
@@ -33,7 +56,7 @@
 }
 
 #hBtn {
-    margin-left: 1060px;
+    margin-left: 1020px;
     margin-top: 30px;
     display: block;
     border: none;
@@ -41,4 +64,35 @@
     height: 40px;
     width: 123px;
     font-size: 20px;
+}
+
+@keyframes textLoad {
+    0% {
+        margin-left: -200px;
+        opacity: .1;
+    }
+    100% {
+        margin-left: 300px;
+        opacity: 1;
+    }
+}
+
+@keyframes textLoad2 {
+    0% {
+        opacity: .1;
+    }
+    100% {
+        margin-left: -338px;
+        opacity: 1;
+    }
+}
+
+@keyframes textLoad3 {
+    0% {
+        opacity: .1;
+    }
+    100% {
+        margin-left: -320px;
+        opacity: 1;
+    }
 }

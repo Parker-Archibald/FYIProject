@@ -28,12 +28,13 @@
 }
 
 #abtPic {
-    background-image: url('../Styles/Pics/newClothing.jpg');
+    background-image: url('../Styles/Pics/AbtHome.jpg');
     background-repeat: no-repeat;
-    width: 600px;
-    height: 400px;
-    margin-left: 700px;
-    margin-top: -400px;
+    width: 380px;
+    height: 600px;
+    margin-left: 790px;
+    margin-top: -550px;
+    box-shadow: 15px 15px 2px 1px tomato;
 }
 
 #findOutMore {

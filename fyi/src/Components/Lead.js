@@ -2,14 +2,14 @@ import React, { Component } from "react";
 import "../Styles/Login.css";
 import Leads from './Leads'
 
-class Book extends Component {
+class Lead extends Component {
 
   state = {
-    info: ''
+    info: '',
   }
 
   componentDidMount() {
-    fetch('http://localhost:3000/') 
+    fetch('http://localhost:3000/leads') 
     .then(response => {return response.json()})
     .then(data =>data.map((data) => <Leads lead={data}/>))
     .then(info => {
@@ -21,7 +21,6 @@ class Book extends Component {
     return (
       <div>
         <div id="inBox">
-        Leads
         <div id='leadCom'>{this.state.info}</div>
         </div>
       </div>
@@ -29,4 +28,4 @@ class Book extends Component {
   }
 }
 
-export default Book;
+export default Lead;

@@ -6,20 +6,27 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <div className="Pic" style={{ opacity: 0.7 }}>
-          <div id="picQuote">
-            I am thinking about putting a quote here, or a comment
+        <div className="Pic" style={{ opacity: 1 }}>
+          <div id="picQuote1">
+            Look your best.<br/>
+          </div>
+          <div id='picQuote2'>
+          Feel your best.<br/>
+          </div>
+          <div id='picQuote3'>
+          Be your best.<br/>
           </div>
         </div>
         <HomeQuote />
         <div id="hBoxQ">
           <div id="hQuestion">
-            I think we should put a question here?
+           How can I help you feel more put together?
+           {/* make one line */}
             <br />
           </div>
         </div>
         <button type="Submit" id="hBtn">
-          Services?
+          Survey?
         </button>
       </div>
     );

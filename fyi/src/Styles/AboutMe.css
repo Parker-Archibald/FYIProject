@@ -1,9 +1,9 @@
 #profPic {
-    background-image: url('../Styles/Pics/newClothing.jpg');
+    background-image: url('../Styles/Pics/AboutMePic.jpg');
     background-repeat: no-repeat;
     height: 600px;
     margin-top: 80px;
-    margin-left: 300px;
+    margin-left: 600px;
     display: flex;
 }
 
@@ -11,6 +11,6 @@
     background-image: url('../Styles/Pics/prof.jpg');
     background-repeat: no-repeat;
     height: 900px;
-    margin-top: -1300px;
+    margin-top: -600px;
     margin-left: 1000px;
 }

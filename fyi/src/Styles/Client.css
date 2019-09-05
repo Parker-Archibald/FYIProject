@@ -1,0 +1,23 @@
+#clientBox {
+    border-bottom: 2px solid black;
+}
+
+#clientTitle {
+    font-size: 40px;
+    margin: 40px 0px 0px 600px;
+}
+
+#clientName {
+    margin-left: 200px;
+}
+
+#clientPhone {
+    margin: -20px 0px 0px 400px;
+}
+
+#clientRealName {
+    margin: 30px 0px 0px 200px;
+    border-bottom: 1px solid black;
+    width: 1200px;
+    font-size: 20px;
+}
