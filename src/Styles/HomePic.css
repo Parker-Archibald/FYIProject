@@ -97,7 +97,7 @@
 @media only screen and (max-width: 1440px) {
     .Pic {
         background-size: relative;
-        width: 463px;
+        width: 500px;
         background-size: contain;
     }
     #picQuote1 {
