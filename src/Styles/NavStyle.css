@@ -33,9 +33,9 @@ nav {
     margin-top: -33px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
     #navWords {
-        font-size: 10px;
+        font-size: 8px;
         margin: 10px;
     }
 
@@ -44,7 +44,7 @@ nav {
     }
 
     #FYI {
-        font-size: 20px;
+        font-size: 15px;
         margin-left: 20px;
     }
     

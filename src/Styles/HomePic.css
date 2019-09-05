@@ -94,27 +94,27 @@
     display: flex;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
     .Pic {
         background-size: relative;
-        width: 500px;
+        width: 367px;
         background-size: contain;
     }
     #picQuote1 {
-        font-size: 20px;
+        font-size: 15px;
         margin-top: 30px;
         animation: textLoad 1.5s forwards;
     }
 
     #picQuote2 {
-        font-size: 20px;
+        font-size: 15px;
         margin-top: 60px;
         animation: textLoad2 1.5s forwards;
         animation-delay: 1s
     }
 
     #picQuote3 {
-        font-size: 20px;
+        font-size: 15px;
         margin-top: 90px;
         animation: textLoad3 1.5s forwards;
         animation-delay: 2s;
@@ -136,7 +136,7 @@
             opacity: .1;
         }
         100% {
-            margin-left: -136px;
+            margin-left: -102px;
             opacity: 1;
         }
     }
@@ -147,7 +147,7 @@
             opacity: .1;
         }
         100% {
-            margin-left: -128px;
+            margin-left: -97px;
             opacity: 1;
         }
     }
