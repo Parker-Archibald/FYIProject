@@ -97,7 +97,7 @@
 @media only screen and (max-width: 1440px) {
     .Pic {
         background-size: relative;
-        width: 366px;
+        width: 380px;
         background-size: contain;
         margin-top: 20px;
     }
