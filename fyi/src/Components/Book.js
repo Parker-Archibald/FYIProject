@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import '../Styles/Book.css';
+import {LEADS_API} from '../Config/coms';
 
 class Book extends Component {
     constructor(props) {
@@ -22,7 +23,7 @@ class Book extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        fetch('http://localhost:3000/leads', {
+        fetch(`${LEADS_API}/leads`, {
             method: 'POST',
             headers: {
                 "Content-Type": 'application/json'

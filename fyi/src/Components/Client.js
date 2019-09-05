@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Clients from './Clients';
+import {LEADS_API} from '../Config/coms';
 
 class Client extends Component {
 
@@ -8,7 +9,7 @@ class Client extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3000/clients') 
+        fetch(`${LEADS_API}/clients`) 
         .then(response => {return response.json()})
         .then(data =>data.map((data) => <Clients client={data}/>))
         .then(info => {

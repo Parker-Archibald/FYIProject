@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../Styles/Login.css";
-import Leads from './Leads'
+import Leads from './Leads';
+import {LEADS_API} from '../Config/coms';
 
 class Lead extends Component {
 
@@ -9,7 +10,7 @@ class Lead extends Component {
   }
 
   componentDidMount() {
-    fetch('http://localhost:3000/leads') 
+    fetch(`${LEADS_API}/leads`) 
     .then(response => {return response.json()})
     .then(data =>data.map((data) => <Leads lead={data}/>))
     .then(info => {

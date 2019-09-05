@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../Styles/Leads.css";
 import LeadModal from '../Components/LeadModal';
+import {LEADS_API} from '../Config/coms';
 
 class Leads extends Component {
   constructor(props) {
@@ -29,7 +30,7 @@ class Leads extends Component {
       const {id, status, ...newState} = this.state;
       newState.status = 'currentClient';
     e.preventDefault();
-    fetch(`http://localhost:3000/leads/${this.state.id}`, {
+    fetch(`${LEADS_API}/leads/${this.state.id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
