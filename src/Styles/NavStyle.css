@@ -33,14 +33,15 @@ nav {
     margin-top: -33px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1440px) {
     #navWords {
         font-size: 8px;
         margin: 10px;
     }
 
     nav {
-        margin-left: 100px;
+        margin-left: -950px;
+        margin-top: 35px;
     }
 
     #FYI {
@@ -50,7 +51,7 @@ nav {
     
     #login {
         font-size: 10px;
-        margin-left: 450px;
+        margin-left: 400px;
         margin-top: -15px;
         width: 30px;
         height: 15px;

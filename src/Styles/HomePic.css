@@ -94,10 +94,10 @@
     display: flex;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1440px) {
     .Pic {
         background-size: relative;
-        width: 367px;
+        width: 463px;
         background-size: contain;
     }
     #picQuote1 {

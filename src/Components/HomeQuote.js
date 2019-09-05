@@ -24,7 +24,6 @@ class HomeQuote extends Component {
               regard you favorably and with continued interest...<br/>
               <p id='indent'>Judith Rasband</p>
           </p>
-          <div id='vid'>video??</div>
         </div>
       </>
     );
