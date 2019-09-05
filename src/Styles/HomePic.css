@@ -97,25 +97,26 @@
 @media only screen and (max-width: 1440px) {
     .Pic {
         background-size: relative;
-        width: 500px;
+        width: 366px;
         background-size: contain;
+        margin-top: 20px;
     }
     #picQuote1 {
         font-size: 15px;
-        margin-top: 30px;
+        margin-top: 20px;
         animation: textLoad 1.5s forwards;
     }
 
     #picQuote2 {
         font-size: 15px;
-        margin-top: 60px;
+        margin-top: 50px;
         animation: textLoad2 1.5s forwards;
         animation-delay: 1s
     }
 
     #picQuote3 {
         font-size: 15px;
-        margin-top: 90px;
+        margin-top: 80px;
         animation: textLoad3 1.5s forwards;
         animation-delay: 2s;
     }
