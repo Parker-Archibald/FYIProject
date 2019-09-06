@@ -13,8 +13,6 @@ const customStyles = {
   }
 };
 
-// Modal.setAppElement("#root");
-
 class LeadModal extends React.Component {
   constructor(props) {
     super(props);
@@ -42,13 +40,6 @@ class LeadModal extends React.Component {
   }
 
   render() {
-      const children = React.Children.map(this.props.children, child => {
-        return React.cloneElement(child, {
-          closeModal: () => {
-              this.setState({ modalIsOpen: false })
-          }
-        });
-      });
     return (
       <div>
         <button onClick={this.toggleModal} id='modalText'>View</button>
@@ -59,7 +50,6 @@ class LeadModal extends React.Component {
           style={customStyles}
           contentLabel={this.props.name}
         >
-
             <div>
 
           <div id='modalName'>{this.state.name}</div>
