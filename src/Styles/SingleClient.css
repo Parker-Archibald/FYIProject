@@ -1,0 +1,17 @@
+#singleTitle {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#futurePic {
+    border: 1px solid black;
+    width : 400px;
+    height: 400px;
+    margin-left: 40px;
+}
+
+#singlePersonInfo {
+    margin-top: -350px;
+    margin-left: -200px;
+    text-align: center;
+}

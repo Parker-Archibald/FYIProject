@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import '../Styles/Client.css';
+import {Link} from 'react-router-dom';
 
 class Clients extends Component {
   constructor(props) {
@@ -19,7 +20,11 @@ class Clients extends Component {
   render() {
     return (
         <div>
-            <div id='clientRealName'>{this.state.name}</div>
+           <div id='clientList'>
+           <div id='clientRealName'>{this.state.name}</div>
+            <div id='clientRealPhone'>{this.state.phone}</div>
+            <Link to={{pathname: `/single/${this.state.name}`, state: {state: this.state}}} type='submit' id='openClient'>Open Client</Link>
+           </div>
         </div>
     )
   }

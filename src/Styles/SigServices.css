@@ -6,6 +6,12 @@
     margin-bottom: 100px;
 }
 
+@media only screen and (max-width: 1440px) {
+    #sigServe {
+        margin-left: 20px;
+    }
+}
+
 #box1 {
     height: 400px;
     width: 350px;

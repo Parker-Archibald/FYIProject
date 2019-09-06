@@ -8,6 +8,7 @@ import ContactMePage from "../Pages/ContactMePage";
 import LeadsPage from '../Pages/LeadsPage';
 import BookPage from '../Pages/BookPage';
 import ClientsPage from '../Pages/ClientsPage';
+import SingleClientPage from '../Pages/SingleClientPage';
 
 const Routes = () => {
   return (
@@ -20,6 +21,7 @@ const Routes = () => {
       <Route path='/leads' component={() => <LeadsPage/>}/>
       <Route path='/book' component={() => <BookPage/>}/>
       <Route path='/clients' component={() => <ClientsPage/>}/>
+      <Route path='/single/:handle' render={(props) => <SingleClientPage {...props} single={props}/>}/>
     </>
   );
 };

@@ -7,6 +7,7 @@
 
 #navWords:hover {
     color: tomato;
+    border-bottom: 1px solid tomato;
 }
 
 nav {
