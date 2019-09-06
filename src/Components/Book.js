@@ -42,7 +42,7 @@ class Book extends Component {
                         <input type='phone' name='phone' id='bookPhone' placeholder='Phone' onChange={this.handleChange}/>
                         <input type='date' name='date' id='bookDate' placeholder="Date" onChange={this.handleChange}/>
                         <input type='email' name='email' placeholder='Email' onChange={this.handleChange}/>
-                        <input placeholder='Comments' id='bookComments' name='comments'  length='20' onChange={this.handleChange}/>
+                        <textarea placeholder='Comments' id='bookComments' name='comments'  length='20' onChange={this.handleChange}/>
                         <button type='submit' id='bookButton'>Book</button>
                     </form>
                 </fieldset>

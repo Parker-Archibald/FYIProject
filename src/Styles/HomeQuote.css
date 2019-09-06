@@ -27,10 +27,33 @@
     text-indent: 200px;
 }
 
+
+@media only screen and (max-width: 1440px) {
+    #box {
+        margin: -300px 0px 0px 20px;
+        width: 150px;
+        height: 150px;
+    }
+
+    #head {
+        font-size: 10px;
+        width: 80px;
+    }
+
+    #text {
+        font-size: 6px;
+        margin: 0px 3px 0px 3px;
+    }
+
+    #indent {
+        text-indent: 40px;
+    }
+}
+/* 
 #vid {
     background-color: transparent;
     margin-top: -940px;
     margin-left: 880px;
     width: 450px;
     height: 400px;
-}
+} */
