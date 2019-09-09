@@ -22,7 +22,8 @@ class Leads extends Component {
     e.preventDefault();
     fetch(`http://localhost:3000/leads/${this.state.id}`, {
       method: "DELETE"
-    });
+    })
+    .then(this.refresh());
   };
 
   handleAdd = e => {
@@ -37,7 +38,12 @@ class Leads extends Component {
       },
       body: JSON.stringify(newState)
     })
-    alert(`Client ${newState.name} ${newState.status} added as a Current Client!`)
+    alert(`Client ${newState.name} ${newState.status} added as a Current Client!`);
+    this.refresh();
+  }
+
+  refresh() {
+    document.location.reload(true);
   }
 
   render() {

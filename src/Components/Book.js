@@ -31,6 +31,11 @@ class Book extends Component {
             body: JSON.stringify(this.state)
         })
         .then(alert(`Successfully submitted! Thank you! ${this.state.name}`))
+        .then(this.refresh());
+    }
+
+    refresh() {
+        document.location.reload(true);
     }
 
     render() {
