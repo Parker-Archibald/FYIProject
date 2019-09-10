@@ -19,13 +19,14 @@ class SingleClientPage extends Component {
   render() {
     return (
       <div>
-        <h1 id="singleTitle">SingleClientPage</h1>
+        <h1 id="singleTitle">{this.state.name}</h1>
         <div id="futurePic">Pic</div>
         <body id='singlePersonInfo'>
-          <div id="singleName">{this.state.name}</div>
-          <div id="singlePhone">{this.state.phone}</div>
-          <div id="singleEmail">{this.state.email}</div>
-          <div id="singleInitialComments">{this.state.comments}</div>
+
+          <div id='singleContactInfo'>Contact Info: {this.state.phone} {this.state.email}</div><br/>
+          <div id='singleContactInfo'>Initial Comments: {this.state.comments}</div>
+          <div id='singleJournal'>Notes:<br/></div>
+          <textarea id='singleJournalBox'></textarea>
         </body>
       </div>
     );

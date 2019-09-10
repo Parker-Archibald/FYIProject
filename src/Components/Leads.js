@@ -23,7 +23,7 @@ class Leads extends Component {
     fetch(`http://localhost:3000/leads/${this.state.id}`, {
       method: "DELETE"
     })
-    .then(async data => await this.refresh());
+    .then(this.refresh());
   };
 
   handleAdd = e => {

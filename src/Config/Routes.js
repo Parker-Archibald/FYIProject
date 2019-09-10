@@ -9,6 +9,7 @@ import LeadsPage from '../Pages/LeadsPage';
 import BookPage from '../Pages/BookPage';
 import ClientsPage from '../Pages/ClientsPage';
 import SingleClientPage from '../Pages/SingleClientPage';
+import SurveyPage from '../Pages/SurveyPage';
 
 const Routes = () => {
   return (
@@ -21,6 +22,7 @@ const Routes = () => {
       <Route path='/leads' component={() => <LeadsPage/>}/>
       <Route path='/book' component={() => <BookPage/>}/>
       <Route path='/clients' component={() => <ClientsPage/>}/>
+      <Route path='/survey' component={() => <SurveyPage/>}/>
       <Route path='/single/:handle' render={(props) => <SingleClientPage {...props} single={props}/>}/>
     </>
   );

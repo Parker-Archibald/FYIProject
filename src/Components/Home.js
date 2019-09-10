@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Link} from 'react-router-dom';
 import "../Styles/HomePic.css";
 import HomeQuote from "../Components/HomeQuote";
 
@@ -26,7 +27,7 @@ class Home extends Component {
           </div>
         </div>
         <button type="Submit" id="hBtn">
-          Survey?
+          <Link to='/survey' style={{textDecoration: 'none', color: 'black'}}>Survey?</Link>
         </button>
       </div>
     );

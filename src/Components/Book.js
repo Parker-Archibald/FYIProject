@@ -43,10 +43,10 @@ class Book extends Component {
             <div>
                 <fieldset id='bookField'>
                     <form onSubmit={this.handleSubmit}>
-                        <input type='name' name='name' id='bookName' placeholder='Name' onChange={this.handleChange}/>
-                        <input type='phone' name='phone' id='bookPhone' placeholder='Phone' onChange={this.handleChange}/>
-                        <input type='date' name='date' id='bookDate' placeholder="Date" onChange={this.handleChange}/>
-                        <input type='email' name='email' placeholder='Email' onChange={this.handleChange}/>
+                        <input type='name' className="bookAll" name='name' id='bookName' placeholder='Name' onChange={this.handleChange}/>
+                        <input type='phone'className="bookAll" name='phone' id='bookPhone' placeholder='Phone' onChange={this.handleChange}/>
+                        <input type='date' className="bookAll" name='date' id='bookDate' placeholder="Date" onChange={this.handleChange}/>
+                        <input type='email' className="bookAll" name='email' placeholder='Email' onChange={this.handleChange}/>
                         <textarea placeholder='Comments' id='bookComments' name='comments'  length='20' onChange={this.handleChange}/>
                         <button type='submit' id='bookButton'>Book</button>
                     </form>

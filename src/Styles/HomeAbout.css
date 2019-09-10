@@ -1,6 +1,6 @@
 #abt {
-    border: 1px solid tomato;
-    background-color: tomato;
+    border: 1px solid #d80000;
+    background-color: #d80000;
     width: 120px;
     margin-left: 210px;
 }
@@ -34,7 +34,7 @@
     height: 600px;
     margin-left: 790px;
     margin-top: -550px;
-    box-shadow: 15px 15px 2px 1px tomato;
+    box-shadow: 15px 15px 2px 1px #d80000;
 }
 
 #findOutMore {
