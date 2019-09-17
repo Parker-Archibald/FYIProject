@@ -20,14 +20,14 @@ class Leads extends Component {
 
   handleDelete = e => {
     e.preventDefault();
-    fetch(`http://localhost:3000/leads/${this.state.id}`, {
+    fetch(`${LEADS_API}/leads/${this.state.id}`, {
       method: "DELETE"
     })
     .then(this.refresh());
   };
 
   handleAdd = e => {
-    this.setState({status : 'currentClient'});
+    // this.setState({status : 'currentClient'});
       const {id, status, ...newState} = this.state;
       newState.status = 'currentClient';
     e.preventDefault();

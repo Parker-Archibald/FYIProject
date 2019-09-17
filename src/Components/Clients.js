@@ -29,4 +29,5 @@ class Clients extends Component {
     )
   }
 }
+
 export default Clients;

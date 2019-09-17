@@ -11,7 +11,7 @@ class Client extends Component {
     componentDidMount() {
         fetch(`${LEADS_API}/clients`) 
         .then(response => {return response.json()})
-        .then(data =>data.map((data) => <Clients client={data}/>))
+        .then(data => data.map((data) => <Clients client={data}/>))
         .then(info => {
           this.setState({info: info})
         })
