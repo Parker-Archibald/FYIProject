@@ -14,7 +14,9 @@ class Leads extends Component {
       date: this.props.lead.date,
       status: this.props.lead.status,
       comments: this.props.lead.comments,
-      id: this.props.lead._id
+      id: this.props.lead._id,
+      forJournal: '',
+      singleJournal: ''
     };
   }
 
@@ -38,7 +40,7 @@ class Leads extends Component {
       },
       body: JSON.stringify(newState)
     })
-    alert(`Client ${newState.name} ${newState.status} added as a Current Client!`);
+    alert(`Client ${newState.name} added as a Current Client!`);
     this.refresh();
   }
 
