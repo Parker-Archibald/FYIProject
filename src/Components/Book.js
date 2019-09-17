@@ -5,16 +5,16 @@ import {LEADS_API} from '../Config/coms';
 class Book extends Component {
     constructor(props) {
         super(props);
-        this.setState({status: 'potentialClient'})
-    }
 
-    state = {
-        name: '',
-        phone: '',
-        date: '',
-        email: '',
-        comments: '',
-        status: 'potentialClient'
+        this.state = {
+            name: '',
+            phone: '',
+            date: '',
+            email: '',
+            comments: '',
+            status: 'potentialClient'
+        }
+        
     }
 
     handleChange = ( {target} ) => {

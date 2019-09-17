@@ -9,7 +9,7 @@ class Nav extends Component {
         <div>
           <div id="FYI">FYI and Logo</div>
           <nav>
-            <Link to="/" id="navWords" active>
+            <Link to="/" id="navWords">
               Home
             </Link>
             <Link to="/about" id="navWords">
