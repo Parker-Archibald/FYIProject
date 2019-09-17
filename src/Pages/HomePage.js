@@ -7,7 +7,7 @@ import HomeAbout from '../Components/HomeAbout';
 const HomePage = () => {
 
   return (
-    <body >
+    <div >
       <div/>
       <div>
         <Home />
@@ -15,7 +15,7 @@ const HomePage = () => {
         <div id='book'><HomeBook/></div>
         <div><HomeAbout/></div>
       </div>
-    </body>
+    </div>
   );
 };
 export default HomePage;

@@ -22,8 +22,8 @@ class HomeQuote extends Component {
               inviting others to become acquainted witht the unique
               individual inside your well-managed visual image and to 
               regard you favorably and with continued interest...<br/>
-              <p id='indent'>Judith Rasband</p>
           </p>
+          <p id='indent'>Judith Rasband</p>
         </div>
       </>
     );
